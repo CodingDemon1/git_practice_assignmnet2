@@ -1,8 +1,13 @@
-//This is a program to find out a number if it is a prime or not
+//This is a program to find out if a number is a prime or not
 
-let num =17;
-    for(let i=0;i<num;i++){
-        if(num%2==0){
-            console.log("True")
+let num =29,count =0;
+    for(let i=2;i<Math.sqrt(num);i++){
+        if(num%i==0){
+            count++
         }
     }
+if(count==0){
+  console.log("It is Prime Number")
+}else{
+  console.log("It is not a Prime Number")
+}
